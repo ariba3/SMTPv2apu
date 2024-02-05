@@ -1,0 +1,413 @@
+
+
+
+ul li {display: inline-block;
+
+
+}
+ul li:hover ul {
+    display: block;
+ 
+    z-index: 3;
+
+}
+ul li ul {
+  position: absolute;
+  width: 400px;
+  display: none;
+  
+}
+ul li ul li { 
+  display: block; 
+  justify-content: left;
+  border-radius: 8px;
+}
+
+body{
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 50rem;
+}
+
+
+.sidebar{
+    width: 20%;
+    background-color: #2cb5ad;
+    padding: 30px;
+    color: beige;
+
+}
+.option{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+/* .option h5{} */
+
+.option:hover{
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-in;
+    color: black;
+ }
+ 
+
+
+
+
+
+.feed-header .dropbtn{
+    background-color: #8ac5b0;
+    color: black;
+    font-size: 36px;
+    border: none;
+
+
+    
+}
+.feed-header .dropdown{
+    position: relative;
+    display: contents;
+}
+.feed-header .dropdown_content{
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    min-width: 16px;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 8px;
+    
+    
+}
+.dropdown_content li{
+    display: block;
+    background: aliceblue;
+    padding: 10px;border-radius: 8px;
+    margin-top: 5px;
+    text-align: center;
+}
+.feed-header.dropdown_content a:hover{
+    background-color: #ddd;
+}
+.feed-header .dropdown:hover .dropdown_content{
+    display: block;
+}
+.feed-header .dropdown:hover .dropbtn{
+    background-color:#8ac5b0;
+}
+
+.dropdown_content  a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.feed{
+    border: 1px solid #5f5f5f5f ;
+    padding: 0px 15px 5px 15px;
+    background-color: #fff;
+    width: 55%;
+    overflow: scroll;
+   
+}
+.feed::-webkit-scrollbar{
+    display: none;
+}
+.feed{
+ scrollbar-width: none;
+}
+.feed-header{
+    position: sticky;
+    top: 0;
+   border-bottom: 1px solid ;
+   background-color: #8ac5b0;
+    padding: 5px 15px;
+    display:flex ;
+    justify-content: space-between;
+    z-index: 3;
+}
+.feed-header h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.tweetbox{
+   padding: 5px 10px;
+   border: bottom 8px solid ;
+   padding-right: 10px;
+   background-color:#8ac5b0 ;
+}
+.tweetbox form{
+    display: flex;
+    flex-direction: column;
+}
+.tweetbox-input{
+    display: flex;
+    padding: 10px;
+}
+.tweetbox-input input{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #8ac5b0;
+}
+
+
+.tweetbox_btn {
+    margin-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tweetbox_btn button{
+    border-radius: 30px;
+    font-weight: 700;
+}
+.tweetbox .file button{
+    border: none;
+    background-color: #8ac5b0;
+}
+
+
+.post{
+    
+    align-items: flex-start;
+    padding-bottom: 13rem;
+    background-color: #fff;
+
+}
+.post_header{
+    display: flex;
+    gap: 8px;
+}
+.post_header p{
+    margin-left: 20px;
+}
+.post_body{
+  padding-top: 10px;
+}
+.post_left{
+    padding-left: 15px;
+}
+.post_body img{
+    height: 22rem;
+   
+}
+
+
+.post_right .dropbtn{
+    background-color: #ad9e3d;
+    color: black;
+    font-size: 16px;
+    border: none;
+}
+.post_right .dropdown{
+    position: relative;
+    display: contents;
+}
+.post_right .dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 16px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.post_right .dropdown_content a:hover{
+    background-color: #fff;
+    margin: 0;
+    
+}
+.post_right .dropdown:hover .dropdown_content{
+    display: block;
+}
+.post_right .dropdown:hover .dropbtn{
+    background-color: #ad9e3d;
+}
+
+
+
+
+
+
+  
+.post1{
+    margin-top: 10px;
+    padding: 15px;
+display: flex;
+justify-content: space-between;
+background-color: #ad9e3d;
+border-radius: 30px;
+}
+.post_avater img{
+border-radius: 50%;
+height: 35px;
+
+}
+.post_headertext{
+    display: flex;
+    font-family: initial;
+    gap: 3px;
+}
+.post_headertext h5{
+    margin: 0;
+}
+.post_headertext svg{
+    color: blue;
+    margin-top: 7px;
+}
+.dropdown .dropdown-menu{
+    width: 60%;
+    padding: 20px;
+
+}
+.dropdown .dropdown-menu li a{
+ border: none;
+}
+.post_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+}
+.cort{
+    overflow: hidden;
+    height: 30px;
+    /* width: 28px; */
+    display: block;
+    position: relative;
+
+}
+.cort button{
+    position: relative;
+}
+.icon{
+    position: relative;
+    top: 4px;
+    z-index: 1;
+    font-size: 24px;
+    color: black;
+}
+.count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 11px;
+    border-radius: 50%;
+    background: red;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: bold;
+
+}
+.comment{
+    background: none;
+    margin: 10px;
+    border: none;
+}
+.comment button{
+    padding: 0;
+}
+.comment input{
+    background: #ad9e3d;
+    border: none;
+    border-radius: 8px;
+    margin-right: -50px;
+    outline: none;
+}
+.post_footer button{
+    border: none;
+    background-color: #ad9e3d;
+   }
+
+
+.footer{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    background: #8ac5b0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+    
+
+.footer button{
+    border: none;
+    background: none;
+    padding: 20px;
+}
+
+
+
+
+.footer .profile{
+    display: flex;
+}
+.right{
+    padding: 10px 20px;
+    width: 25%;
+    background: #2cb5ad;
+}
+.input-groups{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+   
+}
+.right .input-groups input{
+    display: block;
+    outline: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+   margin-right: -30px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.input-groups button{
+    background: #fff;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.add{
+    background: #fff;
+    margin: 25px;
+    border-radius: 10px;
+    padding: 10px
+}

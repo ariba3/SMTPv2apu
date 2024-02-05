@@ -1,0 +1,21 @@
+.popup-box {
+    width: 400px;
+    height: max-content;
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 2rem;
+}
+.Request-profile{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
